@@ -65,15 +65,16 @@ select {
 }
 
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100dvw;
-	height: 100dvh;
-	background-color: var(--clr-off-black);
-	color: #fff;
 	font-family: "Inter", sans-serif;
 	font-size: 14px;
+	background-color: var(--clr-off-black);
+}
+
+main {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
 }
 
 .container {
