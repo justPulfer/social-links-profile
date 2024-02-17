@@ -78,7 +78,6 @@ main {
 }
 
 .container {
-	width: 40%;
 	max-width: 385px;
 	margin: auto;
 	display: flex;
