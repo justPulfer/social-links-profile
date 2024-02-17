@@ -11,7 +11,6 @@ export default function App() {
 	return (
 		<div>
 			<Main />
-			<Footer />
 		</div>
 	);
 }
@@ -22,9 +21,11 @@ function Main() {
 			<div className="container">
 				<div className="profile-info">
 					<img src="/images/avatar-jessica.jpeg" alt="Profile"></img>
-					<p className="name">Jessica Randall</p>
-					<p className="location">London, United Kingdom</p>
-					<p className="role">"Front-end developer and avid reader."</p>
+					<div className="personal-info">
+						<h1 className="name">Jessica Randall</h1>
+						<h2 className="location">London, United Kingdom</h2>
+					</div>
+					<h3 className="role">"Front-end developer and avid reader."</h3>
 				</div>
 				<Skills />
 			</div>
@@ -41,21 +42,5 @@ function Skills() {
 				</li>
 			))}
 		</ul>
-	);
-}
-
-function Footer() {
-	return (
-		<div className="attribution">
-			Challenge by
-			<a
-				href="https://www.frontendmentor.io?ref=challenge"
-				target="_blank"
-				rel="noreferrer"
-			>
-				Frontend Mentor
-			</a>
-			. Coded by <a href="https://github.com/justPulfer">Pulfer Dadson</a>.
-		</div>
 	);
 }

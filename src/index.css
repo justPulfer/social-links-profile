@@ -56,6 +56,12 @@ select {
 	--clr-grey: hsl(0, 0%, 20%);
 	--clr-dark-grey: hsl(0, 0%, 12%);
 	--clr-off-black: hsl(0, 0%, 8%);
+
+	/* font-weight */
+	--fw-light: 200;
+	--fw-regular: 400;
+	--fw-bold: 600;
+	--fw-extra-bold: 900;
 }
 
 body {
@@ -72,32 +78,57 @@ main {
 }
 
 .container {
+	width: 40%;
+	max-width: 385px;
 	margin: auto;
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	gap: 1rem;
-	padding: 2rem;
-	max-width: 450px;
-
+	gap: 1.6rem;
+	padding: 2.5rem;
 	background-color: var(--clr-dark-grey);
+	border-radius: 1rem;
 }
 
 .profile-info {
 	display: flex;
+	width: 90%;
 	flex-direction: column;
-	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+	gap: 1.25rem;
 }
 
-.profile-info > img {
+.profile-info img {
 	width: 5.5rem;
 	height: 5.5rem;
 	border-radius: 50%;
 	margin: auto;
 }
 
+.personal-info {
+	display: grid;
+	gap: 0.4rem;
+}
+
+.profile-info h1 {
+	font-size: 1.5rem;
+}
+
+.profile-info h2 {
+	font-size: 0.86rem;
+	color: var(--clr-Green);
+}
+
+.profile-info h3 {
+	font-size: 0.88rem;
+	font-weight: var(--fw-regular);
+}
+
 .skills {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
@@ -108,4 +139,13 @@ main {
 .skill {
 	background-color: var(--clr-grey);
 	padding: 0.75rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	font-weight: var(--fw-bold);
+	transition: background-color 200ms ease-in-out;
+}
+
+.skill:hover {
+	background-color: var(--clr-Green);
+	color: var(--clr-off-black);
 }
